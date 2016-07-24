@@ -1,0 +1,18 @@
+{
+  "name": "simple-timestamps",
+  "main": "./lib/simple-timestamps",
+  "version": "0.0.0",
+  "description": "A package proving a simple means of adding timestamps to the current file.",
+  "keywords": [
+  ],
+  "activationCommands": {
+    "atom-workspace": "simple-timestamps:toggle"
+  },
+  "repository": "https://github.com/atom/simple-timestamps",
+  "license": "MIT",
+  "engines": {
+    "atom": ">=1.0.0 <2.0.0"
+  },
+  "dependencies": {
+  }
+}
