@@ -15,8 +15,12 @@
           "label": "simple-timestamps",
           "submenu": [
             {
-              "label": "Toggle",
-              "command": "simple-timestamps:toggle"
+              "label": "Insert 12-hour format stamp",
+              "command": "simple-timestamps:stamp12"
+            },
+            {
+              "label": "Insert 24-hour format stamp",
+              "command": "simple-timestamps:stamp24"
             }
           ]
         }
