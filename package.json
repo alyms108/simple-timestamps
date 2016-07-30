@@ -6,7 +6,8 @@
   "keywords": [
   ],
   "activationCommands": {
-    "atom-workspace": "simple-timestamps:toggle"
+    "atom-workspace": "simple-timestamps:stamp12",
+    "atom-workspace": "simple-timestamps:stamp24"
   },
   "repository": "https://github.com/atom/simple-timestamps",
   "license": "MIT",
