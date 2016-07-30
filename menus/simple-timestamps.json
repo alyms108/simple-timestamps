@@ -2,8 +2,8 @@
   "context-menu": {
     "atom-text-editor": [
       {
-        "label": "Toggle simple-timestamps",
-        "command": "simple-timestamps:toggle"
+        "label": "Insert 12-hour format stamp",
+        "command": "simple-timestamps:stamp12"
       }
     ]
   },
