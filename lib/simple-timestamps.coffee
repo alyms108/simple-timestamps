@@ -56,9 +56,9 @@ module.exports =
   activate: ->
     @subscriptions = new CompositeDisposable
     @subscriptions.add atom.commands.add 'atom-workspace',
-      'simple-timestamps:12-hour-stamp': => @stamp12()
+      'simple-timestamps:stamp12': => @stamp12()
     @subscriptions.add atom.commands.add 'atom-workspace',
-      'simple-timestamps:24-hour-stamp': => @stamp24()
+      'simple-timestamps:stamp24': => @stamp24()
 
   deactivate: ->
     @subscriptions.dispose()
