@@ -1,5 +1,5 @@
 {
   "atom-workspace": {
-    "ctrl-alt-o": "simple-timestamps:toggle"
+    "cmd-alt-w": "simple-timestamps:stamp12"
   }
 }
