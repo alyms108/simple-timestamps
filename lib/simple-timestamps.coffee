@@ -69,22 +69,22 @@ module.exports =
   stamp12: ->
     # console.log '12-hour format!'
     # editor = atom.workspace.getActivePaneItem()
-    if editor = atom.workspace.getActiveTextEditor()
-      date = new Date()
-      H = date.getHours()
-      M = date.getMinutes()
-      S = date.getSeconds()
+    editor = atom.workspace.getActiveTextEditor()
+    date = new Date()
+    H = date.getHours()
+    M = date.getMinutes()
+    S = date.getSeconds()
 
-      if H < 12
-        p = 'AM'
-        if H is 0
-          H = 12
-      else:
-        p = 'PM'
-        if H is not 12
-          H = H%12
-      stamp = "#{H}:#{M}:#{S}"
-      editor.insertText(stamp)
+    if H < 12
+      p = 'AM'
+      if H is 0
+        H = 12
+    else
+      p = 'PM'
+      if H is not 12
+        H = H%12
+    stamp = "#{H}:#{M}:#{S}"
+    editor.insertText(stamp)
 
   stamp24: ->
     # console.log '24-hour format!'
