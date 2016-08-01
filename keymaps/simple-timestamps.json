@@ -1,5 +1,6 @@
 {
   "atom-workspace": {
-    "cmd-alt-w": "simple-timestamps:stamp12"
+    "cmd-alt-w": "simple-timestamps:stamp12",
+    "cmd-alt-r": "simple-timestamps:stamp24"
   }
 }
