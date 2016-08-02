@@ -69,7 +69,7 @@ module.exports =
   stamp12: ->
     # console.log '12-hour format!'
     # editor = atom.workspace.getActivePaneItem()
-    editor = atom.workspace.getActiveTextEditor()
+    editor = atom.workspace.getActivePaneItem()
     date = new Date()
     H = date.getHours()
     M = date.getMinutes()
