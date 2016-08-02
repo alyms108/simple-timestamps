@@ -56,9 +56,9 @@ module.exports =
   activate: ->
     @subscriptions = new CompositeDisposable
     @subscriptions.add atom.commands.add 'atom-workspace',
-      'simple-timestamps:12-hour-stamp': => @stamp12()
+      'simple-timestamps:stamp12': => @stamp12()
     @subscriptions.add atom.commands.add 'atom-workspace',
-      'simple-timestamps:24-hour-stamp': => @stamp24()
+      'simple-timestamps:stamp24': => @stamp24()
 
   deactivate: ->
     @subscriptions.dispose()
@@ -67,7 +67,32 @@ module.exports =
   #   console.log 'Convert text!'
 
   stamp12: ->
-    console.log '12-hour format!'
+    # console.log '12-hour format!'
+    # editor = atom.workspace.getActivePaneItem()
+    editor = atom.workspace.getActiveTextEditor()
+    date = new Date()
+    H = date.getHours()
+    M = date.getMinutes()
+    S = date.getSeconds()
+    p = null
+
+    if H < 12
+      p = 'AM'
+      if H is 0
+        H = 12
+    else
+      p = 'PM'
+      if H isnt 12
+        H = H%12
+    stamp = "#{H}:#{M}:#{S} #{p}"
+    editor.insertText(stamp)
 
   stamp24: ->
-    console.log '24-hour format!'
+    # console.log '24-hour format!'
+    editor = atom.workspace.getActivePaneItem()
+    date = new Date()
+    H = date.getHours()
+    M = date.getMinutes()
+    S = date.getSeconds()
+    stamp = "#{H}:#{M}:#{S}"
+    editor.insertText(stamp)
