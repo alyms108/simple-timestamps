@@ -74,6 +74,7 @@ module.exports =
     H = date.getHours()
     M = date.getMinutes()
     S = date.getSeconds()
+    p = null
 
     if H < 12
       p = 'AM'
@@ -81,9 +82,9 @@ module.exports =
         H = 12
     else
       p = 'PM'
-      if H is not 12
+      if H isnt 12
         H = H%12
-    stamp = "#{H}:#{M}:#{S}"
+    stamp = "#{H}:#{M}:#{S} #{p}"
     editor.insertText(stamp)
 
   stamp24: ->
