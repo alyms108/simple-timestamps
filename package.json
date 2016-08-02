@@ -5,10 +5,6 @@
   "description": "A package proving a simple means of adding timestamps to the current file.",
   "keywords": [
   ],
-  "activationCommands": {
-    "atom-workspace": "simple-timestamps:stamp12",
-    "atom-workspace": "simple-timestamps:stamp24"
-  },
   "repository": "https://github.com/atom/simple-timestamps",
   "license": "MIT",
   "engines": {
