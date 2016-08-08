@@ -21,6 +21,11 @@ module.exports =
     S = date.getSeconds()
     p = null
 
+
+    # add 0 to single-digit minutes
+    if M < 10
+      M = "0#{M}"
+
     if H < 12
       p = 'AM'
       if H is 0
@@ -38,5 +43,10 @@ module.exports =
     H = date.getHours()
     M = date.getMinutes()
     S = date.getSeconds()
+
+    # add 0 to single-digit minutes
+    if M < 10
+      M = "0#{M}"
+
     stamp = "#{H}:#{M}:#{S}"
     editor.insertText(stamp)
