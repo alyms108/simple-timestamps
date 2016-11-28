@@ -3,7 +3,7 @@
     "cmd-alt-w": "simple-timestamps:stamp12",
     "cmd-alt-r": "simple-timestamps:stamp24"
   },
-  ".platform-linux atom-workspace": {
+  ".platform-win32 atom-workspace, .platform-linux atom-workspace": {
     "ctrl-alt-w": "simple-timestamps:stamp12",
     "ctrl-alt-r": "simple-timestamps:stamp24"
   }
