@@ -1,15 +1,13 @@
 {
   "name": "simple-timestamps",
   "main": "./lib/simple-timestamps",
-  "version": "0.0.0",
+  "version": "0.1.0",
   "description": "A package providing a simple means of adding timestamps to the current file.",
-  "keywords": [
-  ],
+  "keywords": [],
   "repository": "https://github.com/alyms108/simple-timestamps",
   "license": "MIT",
   "engines": {
     "atom": ">=1.0.0 <2.0.0"
   },
-  "dependencies": {
-  }
+  "dependencies": {}
 }
